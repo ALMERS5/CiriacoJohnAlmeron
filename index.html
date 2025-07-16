@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Ciriaco John Almeron</title>
 </head>
 <body>
 
-  <div id="header">
-    <nav id="navbar">
-      <div class="container">
-        <img src="" alt="">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" id="practicum">Practicum</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  
+  <nav id="navbar">
+    <div class="container">
+      <img src="" alt="">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#techstack-section">Skills</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#" id="practicum">Practicum</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  
   <section class="showcase">
     <div class="container">
       <div class="showcase-content">
@@ -37,6 +37,85 @@
       </div>
     </div>
   </section>
+
+  <section class="techstack" id="techstack-section">
+
+    <h1>Techstack</h1>
+
+    <div class="container text-center">
+      <div class="row mb-5">
+        <div class="col">
+          <i class="fab fa-html5 fa-5x"></i>
+          <span class="icon-name">HTML</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-css3-alt fa-5x"></i>
+          <span class="icon-name">CSS</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-js fa-5x"></i>
+          <span class="icon-name">JavaScript</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-php fa-5x"></i>
+          <span class="icon-name">PHP</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-bootstrap fa-5x"></i>
+          <span class="icon-name">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col">
+          <i class="fab fa-python fa-5x"></i>
+          <span class="icon-name">Python</span>
+        </div>
+        <div class="col">
+          <i class="fas fa-file-code fa-5x"></i>
+          <span class="icon-name">C#</span>
+        </div>
+        <div class="col">
+          <img src="images/jquery.svg" alt="VS Code" width="80" height="80">
+          <span class="icon-name">jQuery</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-react fa-5x"></i>
+          <span class="icon-name">React</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-laravel fa-5x"></i>
+          <span class="icon-name">Laravel</span>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col">
+          <img src="images/visual-studio-code.svg" alt="VS Code" width="80" height="80">
+          <span class="icon-name">VS Code</span>
+        </div>
+        <div class="col">
+          <img src="images/visual-studio.svg" alt="VS Code" width="80" height="80">
+          <span class="icon-name">Visual Studio</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-unity fa-5x"></i>
+          <span class="icon-name">Unity</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-github fa-5x"></i>
+          <span class="icon-name">Github</span>
+        </div>
+        <div class="col">
+          <i class="fab fa-git-alt fa-5x"></i>
+          <span class="icon-name">Git</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
 
   <section class="projects">
     <div class="showcase">
@@ -52,7 +131,26 @@
     </div>
   </section>
 
+  <section class="contact" id="contact-section">
+    <div class="container">
+      <div class="content">
+        <h1>Contact</h1>
+        <p>Would like to get in touch?</p>
+        <p>feel free to reach out!</p>
+        <a class="btn" href="https://github.com/ALMERS5" target="_blank"><i class="fab fa-github fa-1x"></i> Github</a>
+        <a class="btn" href="https://www.linkedin.com/in/cjla06/" target="_blank"><i class="fab fa-linkedin fa-1x"></i> LinkedIn</a>
 
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <footer id="main-footer">
+    <span id="footer-devloped-by">Developed by CJ Almeron</span>
+    <span id="footer-copyright">&copy; 2025, All Rights Reserved</span>
+  </footer>
 
   
 
