@@ -159,7 +159,6 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 
@@ -183,6 +182,34 @@ nav {
   margin-top: 10px;
 }
 
+/* Education */
+.education h1 {
+  color: var(--primary-color);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 60px;
+}
+
+.education .container{
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.education .container .content {
+  padding: 60px 20px;
+}
+
+.education .container .content h5 {
+  font-weight: normal;
+  font-style: italic;
+  color: #808080;
+}
+
+.education .container .content ul li {
+  padding-bottom: 5px;
+}
 
 /* Contact */
 
@@ -226,4 +253,23 @@ nav {
 
 #company-background {
   text-align: center;
+}
+
+#company-background h1 {
+  margin: 20px 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+#company-background p {
+  text-align: justify;
+}
+
+#company-background #company-logo {
+  margin: 40px 0px;
+  width: 50%;
+}
+
+#company-background #company-interns {
+  padding: 25px 0px;
 }

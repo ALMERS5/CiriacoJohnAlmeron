@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website of CJ Almeron">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="icon" type="images/png" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
-  <title>CJ Almeron</title>
+  <title>CJLA</title>
 </head>
 <body>
 
-  
+  <!-- NAVBAR -->
   <nav id="navbar">
     <div class="container">
       <img src="" alt="">
@@ -25,7 +27,7 @@
     </div>
   </nav>
 
-  
+  <!-- SHOWCASE -->
   <section class="showcase">
     <div class="container">
       <div class="showcase-content">
@@ -38,6 +40,7 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="projects" id="project-section">
 
     <h1>Projects</h1>
@@ -49,34 +52,40 @@
 
           <div class="col">
             
-            <div class="card" style="width: 18rem; height: 25rem;">
-              <a href="">
+            <div class="card" style="width: 18rem; height: 30rem;">
+              <a data-bs-toggle="modal" data-bs-target="#block-breaker">
                 <img src="/images/BlockBreaker.PNG" class="card-img-top" alt="..." width="200" height="180">
                 <div class="card-body">
                   <h4>Block Breaker</h4>
                   <p class="card-text">Simple, fun, and addictive!</p>
                   <p class="card-text">Block Breaker is a classic game where you bounce a ball to break blocks.</p>
+                  <a class="btn" href="https://github.com/ALMERS5/Game-Mechanics" target="_blank"><i class="fab fa-github fa-1x"></i> Github</a>
+                  <a class="btn" href="https://almers5.github.io/Game-Mechanics/MiniGame1/" target="_blank"><i class="fas fa-link fa-1x"></i></i> Demo</a>
                 </div>
               </a>
             </div>
           </div>
 
           <div class="col">
-            <div class="card" style="width: 18rem; height: 25rem;">
+            <div class="card" style="width: 18rem; height: 30rem;">
               <img src="/images/VGMech.PNG" class="card-img-top" alt="..." width="200" height="180">
               <div class="card-body">
                 <h4>VGMech</h4>
                 <p class="card-text">Visual Game Mechanics is a visual focused website for learning game development that focused on game mechanics.</p>
+                <a class="btn" href="https://github.com/PaulBEureka/VGMech" target="_blank"><i class="fab fa-github fa-1x"></i> Github</a>
+                
               </div>
             </div>
           </div>
 
           <div class="col">
-            <div class="card" style="width: 18rem; height: 25rem;">
+            <div class="card" style="width: 18rem; height: 30rem;">
               <img id="geco" src="/images/GECO_Icon.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4>GECO</h4>
                 <p class="card-text">GECO (Green Efforts on Carbon) fosters sustainable habits via an LLM-based mobile app with a prediction math model.</p>
+                <a class="btn" href="https://github.com/ALMERS5/Game-Mechanics" target="_blank"><i class="fab fa-github fa-1x"></i> Github</a>
+                
               </div>
             </div>
           </div>
@@ -87,6 +96,29 @@
     </div>
   </section>
 
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="block-breaker" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Block Breaker</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/images/BlockBreaker.PNG" alt="" >
+        </div>
+        <div class="modal-footer">
+          <a class="btn" href="https://github.com/ALMERS5/Game-Mechanics" target="_blank"><i class="fab fa-github fa-1x"></i> Github</a>
+          <a class="btn" href="https://almers5.github.io/Game-Mechanics/MiniGame1/" target="_blank"><i class="fas fa-link fa-1x"></i></i> Demo</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- TECHSTACK -->
   <section class="techstack" id="techstack-section">
 
     <h1>Techstack</h1>
@@ -164,14 +196,32 @@
 
   </section>
 
+  <!-- EDUCATION -->
   <section class="education" id="education-section">
+
+    <h1>Education</h1>
+
     <div class="container">
       <div class="content">
-
+        <div class="row">
+          <div class="col-2">
+            <img src="images/MapuaMalayanCollegeLaguna.jpg" alt="VS Code" width="120" height="120">
+          </div>
+          <div class="col-8">
+            <h4>Bachelor of Science in Computer Science</h4>
+            <h5>Mapúa Malayan Colleges Laguna</h5>
+            <ul>
+              <li>Contributed to the development of a mobile application that incorporates large language model that promotes sustainable habits with the integration of sustainability likelihood prediction math model.</li>
+              <li>Developed a website that offers a visually-driven approach to learning game development, focusing particularly on game mechanics through interactive elements such as minigames.</li>
+              <li>Created a sample website for Majayjay Barangay</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact-section">
     <div class="container">
       <div class="content">
@@ -185,15 +235,15 @@
     </div>
   </section>
 
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
+  <!-- FOOTER -->
   <footer id="main-footer">
     <span id="footer-devloped-by">Developed by CJ Almeron</span>
     <span id="footer-copyright">&copy; 2025, All Rights Reserved</span>
   </footer>
 
-  
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 
 
 </body>
