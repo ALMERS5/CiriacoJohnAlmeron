@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #347be6;
-  --secondary-color: #00204E;
+  --second-color: #00204E;
   --tertiary-color: #f60f20;
 }
 
@@ -37,12 +37,22 @@ p {
   margin: 10px 0;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 .text-primary {
   color: var(--primary-color);
 }
 
-.text-secondary {
-  color: var(--secondary-color);
+.text-second {
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+.text-tertiary {
+  font-weight: bold;
+  color: var(--tertiary-color);
 }
 
 .container {
@@ -103,11 +113,11 @@ nav {
   height: 100vh;
   background: url("images/OriginalPic.jpg") no-repeat;
   background-size: 55%;
-  background-position: 110% 80%;
+  background-position: 110% 0%;
 }
 
 .showcase .container .showcase-content {
-  padding-top: 280px;
+  padding-top: 180px;
   text-align: left;
 }
 
@@ -120,6 +130,11 @@ nav {
 .showcase .container .showcase-content .lead {
   font-size: 20px;
   color: #000000;
+}
+
+.showcase .container .showcase-content p {
+  font-weight: 600;
+  padding: 10px 0;
 }
 
 .btn {
@@ -146,12 +161,6 @@ nav {
   text-align: center;
 }
 
-.projects h1 {
-  color: var(--primary-color);
-  font-size: 60px;
-  margin-bottom: 40px;
-}
-
 #geco {
   width: 180px;
   height: 180px;
@@ -160,6 +169,42 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
+
+.projects h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+}
+
+.projects .row {
+  margin-bottom: 40px;
+}
+
+.projects .card {
+  width: 18rem; 
+  height: 30rem;
+  border: 3px solid #000000;
+  border-radius: 10px;
+}
+
+.projects .row .col-4 {
+  margin-top: 40px;
+}
+
+.projects .card img{
+  width: 100%;
+  height: 180px;
+}
+
+.projects .card .project-title{
+  margin: 10px;
+}
+
+
+/* #project-img-blockbreaker {
+  background: url("images/BlockBreaker.PNG");
+  background-size: 100%;
+} */
+
 
 
 /* Techstack */
@@ -182,10 +227,45 @@ nav {
   margin-top: 10px;
 }
 
+/* Experience */
+.experience h1 {
+  color: var(--primary-color);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 60px;
+}
+
+.experience .container {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.experience .container .content {
+  padding: 60px 20px;
+}
+
+.experience .container .content h5 {
+  font-weight: normal;
+  font-style: italic;
+  color: #808080;
+}
+
+.experience .container .content ul li {
+  padding-bottom: 5px;
+}
+
+.experience .container .content .row .col-2 {
+  background: url("images/AmkorTechnologyLogo.png") no-repeat;
+  background-size: 100%;
+}
+
 /* Education */
 .education h1 {
   color: var(--primary-color);
   text-align: center;
+  margin-top: 20px;
   padding-top: 20px;
   font-size: 60px;
 }
@@ -209,6 +289,31 @@ nav {
 
 .education .container .content ul li {
   padding-bottom: 5px;
+}
+
+/* Certificates */
+#certification-section {
+  margin: 100px 0;
+  text-align: center;
+}
+
+#certification-section h1 {
+  color: var(--primary-color);
+  font-size: 60px;
+}
+
+#certification-section #carouselExampleAutoplaying {
+  max-width: 100%;
+  height: 490px;
+  margin: 0 auto;
+  display: block;
+}
+
+#certification-section .carousel-item img {
+  max-width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Contact */
